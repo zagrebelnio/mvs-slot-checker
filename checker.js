@@ -45,6 +45,9 @@ async function checkSlots() {
     await page.goto('https://eqn.hsc.gov.ua/cabinet/queue', {
       waitUntil: 'networkidle2',
     });
+    await page.goto('https://eqn.hsc.gov.ua/cabinet/queue', {
+      waitUntil: 'networkidle2',
+    });
 
     await page.waitForSelector('button');
     await clickButtonByText(page, 'Практичний іспит');
